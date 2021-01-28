@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_header %}
+<li>
+    <a href="#footerBlock" class="header__link">Контакты</a>
+</li>
+<li>
+    <a href="{% url 'index' %}" class="header__link">На главную</a>
+</li>
+{% endblock %}
+{% block content %}
+<div class="productTopImage">
+    <div class="darkFilter">
+        <div class="productTitle">
+            <h1>Зерновые культуры</h1>
+        </div>
+        <script type="text/javascript" src={% static 'js/setTopImage.js' %}></script>
+    </div>
+</div>
+<div class="productContent">
+    <div class="container">
+        <div class="contentText">
+            <div class="textAndImage">
+                <div class="productTextBlock">
+                    <p>Зерновые культуры являются основой сельскохозяйственного производства и главным условием его роста. Зерно является основным продуктом питания человека, используется в кормопроизводстве и как сырье для многих отраслей промышленности.
+                        Наиболее распространены пшеница, рожь, ячмень, овес, кукуруза, просо, сорго и рис.
+                    </p>
+                    <p>Мягкие сорта пшеницы служат для производства хлебобулочной продукции, из твердых сортов изготавливают макаронные изделия. Солод, получаемый из пивоваренного ячменя, является основой для приготовления пива. Овёс, кукуруза и ячмень
+                        широко используются в производстве кормов для животноводства. Зерновые колосовые — экономическая и политическая независимость государства.
+                    </p>
+                </div>
+                <div class="productImageBlock"><img src={% static "img//productImage2-1.jpg" %} alt="Зерновые культуры" class="ownersPhoto">
+                    <img src={% static "img/productImage2-2.jpg" %} alt="Зерновые культуры" class="ownersPhoto">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

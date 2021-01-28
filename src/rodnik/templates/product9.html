@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_header %}
+<li>
+    <a href="#footerBlock" class="header__link">Контакты</a>
+</li>
+<li>
+    <a href="{% url 'index' %}" class="header__link">На главную</a>
+</li>
+{% endblock %}
+{% block content %}
+<div class="productTopImage">
+    <div class="darkFilter">
+        <div class="productTitle">
+            <h1>Семеноводство многолетних трав</h1>
+        </div>
+        <script type="text/javascript" src={% static 'js/setTopImage.js' %}></script>
+    </div>
+</div>
+<div class="productContent">
+    <div class="container">
+        <div class="contentText">
+            <div class="textAndImage">
+                <div class="productTextBlock">
+                    <p>Корневая система многолетних злаковых трав размещается в основном в верхнем слое почвы на глубине 20-30 см. Одним из влаголюбивых злаковых растений является тимофеевка луговая, а к засухоустойчивым относят житняк и пырей безкорневищный.
+                    </p>
+                    <p> Тимофеевка луговая — ценное кормовое растение, самое распространенное из культурных трав. Она прекрасно поедается всеми видами скота. Дает питательное сено, сенную муку и пригодна для пастбища. Тимофеевка луговая — мезофит, поэтому
+                        предпочитает почвы умеренного увлажнения. Рекомендуется для сенокоснопастбищного использования на суходолах, пойменных, низинных лугах и осушенных болотах. Не выдерживает длительного затопления. В культуре возделывается во
+                        всех зонах страны в смеси с клевером, люцерной и эспарцетом.
+                    </p>
+                    <p>Овсяница луговая — значимый многолетник в многополье и в луговодстве. Отлично поедается всеми видами скота. Распространена в посевах и в диком виде в лесной, лесостепной и степной зонах и в горных местностях. Весной отрастает рано,
+                        но цветет в конце июня. Дает два укоса и 3—4 отавы (на пастбище). Засухоустойчива, выдерживает непродолжительное затопление. В травостоях держится долго (6—8 лет). </p>
+                </div>
+                <div class="productImageBlock"><img src={% static "/img/productImage9-1.jpg" %} alt="Семеноводство многолетних трав" class="ownersPhoto">
+                    <img src={% static "/img/productImage9-2.jpg" %} alt="Семеноводство многолетних трав" class="ownersPhoto">
+                    <img src={% static "/img/productImage9-3.jpg" %} alt="Семеноводство многолетних трав" class="ownersPhoto">
+                </div>
+            </div>
+            <div class="productVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ey9O7jYVjsU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

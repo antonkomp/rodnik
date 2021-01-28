@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_header %}
+<li>
+    <a href="#footerBlock" class="header__link">Контакты</a>
+</li>
+<li>
+    <a href="{% url 'index' %}" class="header__link">На главную</a>
+</li>
+{% endblock %}
+{% block content %}
+<div class="productTopImage">
+    <div class="darkFilter">
+        <div class="productTitle">
+            <h1>Семеноводство крестоцветных культур</h1>
+        </div>
+        <script type="text/javascript" src={% static 'js/setTopImage.js' %}></script>
+    </div>
+</div>
+<div class="productContent">
+    <div class="container">
+        <div class="contentText">
+            <div class="textAndImage">
+                <div class="productTextBlock">
+                    <p>По содержанию и валовому выходу протеина с единицы площади рапс превосходит кукурузу и подсолнечник, а по питательности приравнивается к могару, суданской траве, и викоовсяной смеси.Вегетационный период рапса 95–110 дней. Растения
+                        холодостойкие, прорастание начинается при температуре минус 3 градуса. Наибольшая потребность во влаге в период бутонизации и цветения. Урожайность семян может доходить при четких действиях агронома до 20–25 ц/га. Возделывают
+                        культуру, как в кормовых целях, так и на масло. Семена имеют масличность 42–48%.
+                    </p>
+                    <p> Посев производят на глубину 2–4 см, во влажный слой. Оптимальная норма высева может колебаться, в зависимости от зоны возделывания, от 2 до 4 млн. всхожих зерен на гектар.Таким образом, на желтом и красивом поле цветущего рапса,
+                        как ни на какой другой культуре, требуется четкость и своевременность в выполнении всего комплекса и элементов технологии. Переживаний в ходе сезона у тех, кто выращивает рапс и другие масличные крестоцветные культуры, очень
+                        много. Но все они с лихвой окупаются, когда получаешь высокий урожай семян – это настоящее разноцветное золото. Достойная награда за нелегкий труд.
+                    </p>
+                </div>
+                <div class="productImageBlock"><img src={% static "/img/productImage8-1.jpg" %} alt="Семеноводство крестоцветных культур" class="ownersPhoto">
+                    <img src={% static "/img/productImage8-2.jpg" %} alt="Семеноводство крестоцветных культур" class="ownersPhoto">
+                </div>
+            </div>
+            <div class="productVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zXq9nf5mus0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

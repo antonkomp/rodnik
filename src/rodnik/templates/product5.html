@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_header %}
+<li>
+    <a href="#footerBlock" class="header__link">Контакты</a>
+</li>
+<li>
+    <a href="{% url 'index' %}" class="header__link">На главную</a>
+</li>
+{% endblock %}
+{% block content %}
+<div class="productTopImage">
+    <div class="darkFilter">
+        <div class="productTitle">
+            <h1>Молочное скотоводство</h1>
+        </div>
+        <script type="text/javascript" src={% static 'js/setTopImage.js' %}></script>
+    </div>
+</div>
+<div class="productContent">
+    <div class="container">
+        <div class="contentText">
+            <div class="textAndImage">
+                <div class="productTextBlock">
+                    <p>Направление селекции движется в сторону не только повышения продуктивности поголовье, но и повышения долголетия, а значит и здоровья животных. Для реализации селекционных программ Белплемживобъединение ежегодно проводит закрепление
+                        семени высокоценных племенных быков за маточным поголовьем. Получаемый племенной молодняк бычков проходит тщательный ветеринарный и зоотехнический отбор, в результате которого только 20% племенных бычков реализуется на элеверы
+                        республики. В масштабной селекции участвует не более 1% от рожденных за год племенных ремонтных бычков.
+                    </p>
+                    <p> Поголовье коров в племенных хозяйствах насчитывает 1500 голов, в том числе с удоем 2200 кг молока за 305 дней лактации 960 голов. Быкопроизводящие коровы используются в качестве матерей, для получения ремонтных бычков новых генераций
+                        и доноров.
+                    </p>
+                </div>
+                <div class="productImageBlock"><img src={% static "/img/productImage5-1.jpg" %} alt="Молочное скотоводство" class="ownersPhoto">
+                    <img src={% static "/img/productImage5-2.jpg" %} alt="Молочное скотоводство" class="ownersPhoto">
+                </div>
+            </div>
+            <div class="productVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bvC_aLRkwQk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H0i6KJCIV8M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

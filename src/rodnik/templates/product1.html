@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_header %}
+<li>
+    <a href="#footerBlock" class="header__link">Контакты</a>
+</li>
+<li>
+    <a href="{% url 'index' %}" class="header__link">На главную</a>
+</li>
+{% endblock %}
+{% block content %}
+<div class="productTopImage">
+    <div class="darkFilter">
+        <div class="productTitle">
+            <h1>Картофелеводство</h1>
+        </div>
+        <script type="text/javascript" src={% static 'js/setTopImage.js' %}></script>
+    </div>
+</div>
+<div class="productContent">
+    <div class="container">
+        <div class="contentText">
+            <div class="textAndImage">
+                <div class="productTextBlock">
+                    <p>Картофель, выращенный в Беларуси, может быть конкурентоспособным на мировом рынке столового картофеля с высокими вкусовыми его достоинствами. Для этого нужно выращивать лучшие сорта белорусской селекции, обладающие оптимальным
+                        сочетанием хозяйственно полезных признаков и свойств. Наибольшие площади (до 20%) в ближайшие 10 лет будет занимать уникальный среднеспелый сорт Скарб, обладающий максимальной урожайностью, лежкоспособностью и товарностью клубней.
+                    </p>
+                    <p> В качестве столовых экспортных сортов значительные площади сохранят сорта Явар, Архидея, Ласунок, получат распространение Живица, Атлант, Каприз, Криница, Журавинка. Высококачественные чипсы получаются из сортов Орбита, Белорусский
+                        3, Ласунок, Выток, Альпинист, Живица, Криница. Белорусские сорта Сузорье, Здабытак, Синтез, Выток и другие являются лучшим в мире сырьем для получения крахмала. Определенное внимание нужно также уделять выращиванию зарубежных
+                        сортов, удачно дополняющих по своим качествам белорусские сорта и имеющих хорошие позиции на рынке. Это Сантэ, Луговской, Импала, Невский, Удача, Карлена и другие.
+                    </p>
+                </div>
+                <div class="productImageBlock"><img src={% static "img/productImage1-1.jpg" %} alt="Картофель" class="ownersPhoto">
+                    <img src={% static "img/product1-2.jpg" %} alt="Картофель" class="ownersPhoto">
+                </div>
+            </div>
+            <div class="productVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2wLBNNyhMj0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

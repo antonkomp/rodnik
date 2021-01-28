@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_header %}
+<li>
+    <a href="#footerBlock" class="header__link">Контакты</a>
+</li>
+<li>
+    <a href="{% url 'index' %}" class="header__link">На главную</a>
+</li>
+{% endblock %}
+{% block content %}
+<div class="productTopImage">
+    <div class="darkFilter">
+        <div class="productTitle">
+            <h1>Овощные культуры</h1>
+        </div>
+        <script type="text/javascript" src={% static 'js/setTopImage.js' %}></script>
+    </div>
+</div>
+<div class="productContent">
+    <div class="container">
+        <div class="contentText">
+            <div class="textAndImage">
+                <div class="productTextBlock">
+                    <p>Овощеводство – одна из отраслей сельского хозяйства, где в современных условиях в большей мере, чем в других сферах аграрного сектора, во взаимоотношениях с предприятиями и организациями овощепродуктового подкомплекса формируются
+                        и действуют рыночные механизмы: договорные цены, контрактная система; развиваются процессы интеграции и кооперации, отдельные специализированные хозяйствующие субъекты, прежде всего тепличные комбинаты, осуществляют производственную
+                        деятельность на промышленной основе в условиях самоокупаемости и самофинансирования и т. д.
+                    </p>
+                    <p> Поступление продукции обеспечивается с марта по июль месяцы, когда отсутствуют поставки многих видов овощных культур из открытого грунта. Выращивание высоких и стабильных урожаев овощных культур достигается за счёт рациональной
+                        обработки почв, внесения оптимальных доз органических и минеральных удобрений.
+                    </p>
+                </div>
+                <div class="productImageBlock"><img src={% static "img/productImage3-1.jpg" %} alt="Овощные кльтуры" class="ownersPhoto">
+                    <img src={% static "/img/productImage3-2.jpg" %} alt="Овощные кльтуры" class="ownersPhoto">
+                </div>
+            </div>
+            <div class="productVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aV-6pXgKnzE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

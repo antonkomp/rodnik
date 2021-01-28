@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_header %}
+<li>
+    <a href="#footerBlock" class="header__link">Контакты</a>
+</li>
+<li>
+    <a href="{% url 'index' %}" class="header__link">На главную</a>
+</li>
+{% endblock %}
+{% block content %}
+<div class="productTopImage">
+    <div class="darkFilter">
+        <div class="productTitle">
+            <h1>Кормопроизводство</h1>
+        </div>
+        <script type="text/javascript" src={% static 'js/setTopImage.js' %}></script>
+    </div>
+</div>
+<div class="productContent">
+    <div class="container">
+        <div class="contentText">
+            <div class="textAndImage">
+                <div class="productTextBlock">
+                    <p> В настоящее время базовой системой кормопроизводства является зернокормовая, которая ориентирована на производство кормов преимущественно за счет кукурузы и однолетних трав. Кукуруза, на долю которой в полевом кормопроизводстве
+                        приходится около 40% объема заготавливаемых кормов, в отдельные годы не обеспечивает высокую урожайность зеленой массы.
+                    </p>
+                    <p>Варьирование ее по годам достигает 50%. Наряду с этим, использование в наименьшей степени содержащего радионуклиды кукурузного силоса, в качестве основного корма крупного рогатого скота, исключение из составов травосмесей бобовых
+                        культур привели к значительному обеднению рациона животных белком. Основными зернобобовыми культурами являются горох и люпин. Эти культуры менее требовательны к условиям произрастания, формируют высокий выход белка с единицы
+                        площади.
+                    </p>
+                </div>
+                <div class="productImageBlock"><img src={% static "/img/productImage4-1.jpg" %} alt="Кормовые бобы" class="ownersPhoto">
+                    <img src={% static "/img/productImage4-2.jpg" %} alt="Кормовые бобы" class="ownersPhoto">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

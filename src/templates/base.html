@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Родник</title>
+    {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="" class="header__logo">
+                        <img src={% static "img/logo1.png" %} alt="logo">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="##" class="header__link productBtn">Продукция</a>
+                                <ul class="productMenu">
+                                    <li> <a href="{% url 'product1' %}" class="product1">Картофелеводсвто</a></li>
+                                    <li><a href="{% url 'product2' %}" class="product2">Зерновые культуры</a></li>
+                                    <li><a href="{% url 'product3' %}" class="product3">Овощные культуры</a></li>
+                                    <li><a href="{% url 'product4' %}" class="product4">Кормопроизводство</a></li>
+                                    <li><a href="{% url 'product5' %}" class="product5">Молочное скотоводство</a></li>
+                                    <li class="containsSubMenu"><a href="##">Семеноводство </a>
+                                        <ul class="subMenu">
+                                            <li><a href="{% url 'product6' %}" class="product6">Зерновые</a></li>
+                                            <li><a href="{% url 'product7' %}" class="product7">Зернобобовые</a></li>
+                                            <li><a href="{% url 'product8' %}" class="product8">Крестоцветные</a></li>
+                                            <li><a href="{% url 'product9' %}" class="product9">Многолетние травы</a></li>
+                                            <li><a href="{% url 'product10' %}" class="product10">Лён масличный</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            {% block content_header %}{% endblock %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        {% block content_wrapper %}{% endblock %}
+    </div>
+    {% block content %}{% endblock %}
+    <footer id="footerBlock">
+        <div class="footerContainer">
+            <div class="leftFooterText">
+                <div class="footerLogo">
+                    <img src={% static "img/bigLogo4.png" %} alt="Родник">
+                </div>
+            </div>
+            <div class="rightFooterText">
+                <div class="footerTitle">
+                    Контакты для сотрудничества
+                </div>
+                <div class="footerContactInfo">
+                    <p> ТЕЛЕФОНЫ: <a href="tel:+375293538370" target="_blank"> +375(29)3538370</a>,
+                        <a href="tel:+375298930170" target="_blank"> +375(29)8930170</a>, <a href="tel:+375213037141" target="_blank">Тел./факс: +375213037141</a> </p>
+                    <p>ЭЛЕКТРОННАЯ ПОЧТА: <a href="https://my.mail.ru/mail/rodnik-sh/" target="_blank">kfh_rodnik@mail.ru</a> </p>
+                    <p> АДРЕС: <a href="https://goo.gl/maps/E4USZE1FiZtJEFeK9" target="_blank"> 211275, Витебская обл., Шумилинский район, д. Мишковичи</a></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7606.709082333596!2d29.35251160189487!3d55.185626658586095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c51fcd43695c8f%3A0x494851655d1c0b13!2z0JzQuNGI0LrQvtCy0LjRh9C4!5e0!3m2!1sru!2sby!4v1611203812058!5m2!1sru!2sby"
+                        width="300" height="225" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src={% static 'js/script.js' %}></script>
+    {% block static_js %}{% endblock %}
+</body>
+
+</html>
